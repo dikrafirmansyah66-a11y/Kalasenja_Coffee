@@ -104,3 +104,15 @@ document.getElementById("shopping-cart").onclick = () => {
     cartSidebar.classList.remove("active");
   });
 };
+// Pilih semua tombol dengan class btn-order
+const orderButtons = document.querySelectorAll('.btn-order');
+
+orderButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    // Mengambil nama menu dari elemen h3 di dalam card yang sama
+    const itemName = button.parentElement.querySelector('.menu-card-tittle').innerText;
+    
+    // Munculkan alert bawaan browser
+    alert(`Berhasil! ${itemName} telah ditambahkan ke keranjang.`);
+  });
+});
