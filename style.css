@@ -405,6 +405,28 @@ footer .credit a {
   display: flex;
   align-items: center;
 }
+.cart-container {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;      
+  right: -8px;    
+  background-color: #ff0000; 
+  color: white;
+  font-size: 0.6rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 15px;
+  height: 15px;
+  border: 2px solid #000; 
+  
 /* Media Queries */
 
 /* Laptop */
