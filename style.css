@@ -348,6 +348,13 @@ footer .credit a {
   outline: none; 
 }
 
+.navbar-extra a, 
+.navbar-extra #hamburger-menu {
+  margin-left: 0 !important; 
+  display: flex;
+  align-items: center;
+}
+
 /* BUTTON PESAN */
 .btn-order {
   margin-top: 0.5rem;
