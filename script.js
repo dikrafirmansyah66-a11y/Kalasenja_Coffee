@@ -116,12 +116,3 @@ orderButtons.forEach((button) => {
     alert(`Berhasil! ${itemName} telah ditambahkan ke keranjang.`);
   });
 });
-// Contoh sederhana menambah angka
-const badge = document.querySelector('.cart-badge');
-let jumlahPesanan = 1;
-
-if (jumlahPesanan === 0) {
-  badge.style.display = 'none'; // Sembunyikan jika kosong
-} else {
-  badge.innerText = jumlahPesanan;
-}
