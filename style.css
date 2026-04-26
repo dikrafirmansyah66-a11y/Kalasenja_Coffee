@@ -333,14 +333,14 @@ footer .credit a {
 .navbar-extra {
   display: flex;
   align-items: center;
-  gap: 15px; 
+  gap: 8px; 
 }
 
 #search-box {
   width: 150px; 
   font-size: 0.8rem;
   padding: 0.5rem 1rem; 
-  margin-right: 0.5rem;
+  margin-right: 0rem;
 
  
   border: 0.5px solid #ccc; 
@@ -391,6 +391,12 @@ footer .credit a {
   color: var(--primary);
   text-decoration: none;
   cursor: pointer;
+}
+.navbar-extra a, 
+.navbar-extra #hamburger-menu {
+  margin-left: 0 !important; 
+  display: flex;
+  align-items: center;
 }
 /* Media Queries */
 
