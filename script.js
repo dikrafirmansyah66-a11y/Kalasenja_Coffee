@@ -52,9 +52,18 @@ function updateCart() {
   cartItems.innerHTML = "";
   let total = 0;
 
+  // --- Tambahkan Logika Badge Di Sini ---
+  const badge = document.getElementById("cart-badge");
+  if (cart.length > 0) {
+    badge.innerText = cart.length;
+    badge.style.display = "block";
+  } else {
+    badge.style.display = "none";
+  }
+  // --------------------------------------
+
   cart.forEach((item, index) => {
     total += item.price;
-
     cartItems.innerHTML += `
       <p>
         ${item.title} - IDR ${item.price}
@@ -105,13 +114,14 @@ document.getElementById("shopping-cart").onclick = () => {
   });
 };
 // Pilih semua tombol dengan class btn-order
-const orderButtons = document.querySelectorAll('.btn-order');
+const orderButtons = document.querySelectorAll(".btn-order");
 
 orderButtons.forEach((button) => {
-  button.addEventListener('click', () => {
+  button.addEventListener("click", () => {
     // Mengambil nama menu dari elemen h3 di dalam card yang sama
-    const itemName = button.parentElement.querySelector('.menu-card-tittle').innerText;
-    
+    const itemName =
+      button.parentElement.querySelector(".menu-card-tittle").innerText;
+
     // Munculkan alert bawaan browser
     alert(`Berhasil! ${itemName} telah ditambahkan ke keranjang.`);
   });
